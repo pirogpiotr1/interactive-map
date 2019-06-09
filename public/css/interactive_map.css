@@ -1,0 +1,160 @@
+body{
+    background: #eee;
+    font-family: Nunito; 
+    margin: 0;
+}
+.cim-map{
+	width: 100%;
+	/*height: 527px;*/
+	display: inline-block;
+}
+
+#map-canvas{
+	width: 100%;
+	height: 600px;
+}
+
+.cim-container{
+	max-width: 1024px;
+	margin:auto;
+        display: flex;
+}
+
+.map-container,
+.partners-container
+{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+.partners-container.middle,.map-container.middle
+{
+	vertical-align: middle;
+}
+.cim-container .partner-wrapper
+{
+	margin-left: 40px;
+	max-height: 600px;
+	overflow-y: auto;
+}
+.partner-item
+{
+	font-size: 1rem;
+	padding: 5px 0;
+}
+
+.partner-title
+{
+	font-size: 1.25rem;
+	padding: 20px;
+	background: rgb(232,65,44);
+	color: #fff;
+}
+.partner-title.local
+{
+	background-color: #488CCB;
+}
+
+
+
+.partner-container
+{
+	padding: 20px;
+	border-bottom: 1px solid #d1d1d1;
+	background: #f5f5f5;
+
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+.partner-container.middle
+{
+	vertical-align: middle;
+}
+/*.partner-container:hover
+{
+	background: rgba(232,65,44, 0.6);
+	color: #fff;
+}*/
+
+.partner-wrapper .empty
+{
+	/*padding: 0 20px;*/
+}
+.header {
+  
+    background-color: #e8412c;
+    color: #fff;
+    padding: 20px;
+}
+.header h1{
+    margin: 0 5px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 10px;
+}
+main{
+    padding-top: 20px;
+}
+.center-it{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.navigation a{
+    text-decoration: none;
+    color:white;
+    transition: all 0.3s;
+}
+.navigation a:hover{
+    border-bottom: 1px solid #fff;
+}
+input[type="text"] {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #e8412c; /* original color */
+    border: 0;
+    box-shadow: inset 2px 2px 5px #444, 1px 1px 0 #ffc5a6; /* very bright color */
+    padding: 10px;
+    outline: none; /* remove the safari's focus outline border */    
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+main{
+    padding-top: 20px;
+}
+
+
+
+
+
+@media all and (max-width: 1024px){
+	.map-container, .partners-container
+	{
+		width: 100%;
+		padding: 5px 0;
+	}
+	.cim-container .partner-wrapper
+	{
+		margin: 0;
+		padding: 20px 0;
+	}
+
+
+}
+@media all and (max-width: 767px){
+
+	#map-canvas {
+		height: 400px;
+	}
+}
